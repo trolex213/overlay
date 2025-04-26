@@ -14,6 +14,9 @@
 		1BABCCDE2DB98E170046E343 /* ScreenOverlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCDD2DB98E170046E343 /* ScreenOverlayTests.swift */; };
 		1BABCCE82DB98E170046E343 /* ScreenOverlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCE72DB98E170046E343 /* ScreenOverlayUITests.swift */; };
 		1BABCCEA2DB98E170046E343 /* ScreenOverlayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCE92DB98E170046E343 /* ScreenOverlayUITestsLaunchTests.swift */; };
+		1BABCCF82DB994B80046E343 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCF72DB994B80046E343 /* MainWindowController.swift */; };
+		1BABCCFA2DB995C10046E343 /* OverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCF92DB995C10046E343 /* OverlayWindow.swift */; };
+		1BABCCFC2DB9982B0046E343 /* OverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABCCFB2DB9982B0046E343 /* OverlayManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		1BABCCE32DB98E170046E343 /* ScreenOverlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenOverlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BABCCE72DB98E170046E343 /* ScreenOverlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOverlayUITests.swift; sourceTree = "<group>"; };
 		1BABCCE92DB98E170046E343 /* ScreenOverlayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOverlayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1BABCCF62DB98FE80046E343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1BABCCF72DB994B80046E343 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		1BABCCF92DB995C10046E343 /* OverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayWindow.swift; sourceTree = "<group>"; };
+		1BABCCFB2DB9982B0046E343 /* OverlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,9 @@
 		1BABCCBF2DB98E130046E343 = {
 			isa = PBXGroup;
 			children = (
+				1BABCCFB2DB9982B0046E343 /* OverlayManager.swift */,
+				1BABCCF92DB995C10046E343 /* OverlayWindow.swift */,
+				1BABCCF72DB994B80046E343 /* MainWindowController.swift */,
 				1BABCCCA2DB98E130046E343 /* ScreenOverlay */,
 				1BABCCDC2DB98E170046E343 /* ScreenOverlayTests */,
 				1BABCCE62DB98E170046E343 /* ScreenOverlayUITests */,
@@ -95,6 +105,7 @@
 		1BABCCCA2DB98E130046E343 /* ScreenOverlay */ = {
 			isa = PBXGroup;
 			children = (
+				1BABCCF62DB98FE80046E343 /* Info.plist */,
 				1BABCCCB2DB98E130046E343 /* AppDelegate.swift */,
 				1BABCCCD2DB98E130046E343 /* ViewController.swift */,
 				1BABCCCF2DB98E160046E343 /* Assets.xcassets */,
@@ -251,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BABCCFA2DB995C10046E343 /* OverlayWindow.swift in Sources */,
 				1BABCCCE2DB98E130046E343 /* ViewController.swift in Sources */,
+				1BABCCFC2DB9982B0046E343 /* OverlayManager.swift in Sources */,
 				1BABCCCC2DB98E130046E343 /* AppDelegate.swift in Sources */,
+				1BABCCF82DB994B80046E343 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +442,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenOverlay/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -453,6 +468,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenOverlay/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
